@@ -188,7 +188,7 @@
     else
         (printout t "That is not a valid number. Please try again." crlf)
         (retract ?prompt)
-        (assert (segment-invalid-input))
+        (assert (segment-invalid-input))))
 
 (defrule handle-segment-invalid-input
     ?invalid <- (segment-invalid-input)
